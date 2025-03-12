@@ -1,0 +1,232 @@
+%------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom{}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\footskip}{4.08003pt}
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{Benjamin Koppe} \\ \vspace{1pt}
+    \small (702) 600--6833 $|$ \href{mailto:bek76@cornell.edu}{\underline{bek76@cornell.edu}} 
+    $|$ \small \href{https://github.com/benkoppe}{\underline{\smash{github.com/benkoppe}}}
+    $|$ \small \href{https://go.thekoppe.com/linkedin}{\underline{\smash{go.thekoppe.com/linkedin}}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart{}
+    \resumeSubheading{Cornell University}{Ithaca, NY}
+      {B.S. in Computer Science (Engineering)}{Expected May 2026}
+      \resumeItemListStart{}
+        \resumeItem{GPA:\ 4.15. Fall 2024 Junior transfer student.}
+      \resumeItemListEnd{}
+    \resumeSubheading{The University of Arizona}{Tucson, AZ}
+      {B.S. candidate in Computer Science, B.S. candidate in Chemistry}{August 2022 --- May 2024}
+      \resumeItemListStart{}
+        \resumeItem{GPA:\ 4.0. W.A. Franke Honors student}
+        \resumeItem{Coursework in Computational Chemistry (graduate level), Computer Science, Mathematics}
+      \resumeItemListEnd{}
+  \resumeSubHeadingListEnd{}
+
+  \section{Work Experience}
+  \resumeSubHeadingListStart{}
+
+    \resumeSubheading{Industrial Design and Engineering Company (IDECO-NV)}{June 2024 --- Present}
+    {Full-Stack Software Engineer}{Las Vegas, NV}
+        \resumeItemListStart{}
+        \resumeItem{Leading full rewrite \& modernization of the company's web application, driver routing, and payroll management}
+        \resumeItem{Implementing new web stack to completely replace legacy interface for $\sim$50 employees}
+        \resumeItemListEnd{}
+
+  \resumeSubHeadingListEnd{}
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart{}
+
+    \resumeSubheading{Applied LLMs for Large Structured Data}{September 2024 --- Present}
+      {Dr. Jennifer Sun}{Ithaca, NY}
+      \resumeItemListStart{}
+      \resumeItem{Working with agricultural researchers to utilize large language models in a data restructuring pipeline}
+      \resumeItem{Result will, if successful, supercede 50 -- 100 past hours of work and automate a 5-hour manual process}
+      \resumeItemListEnd{}
+
+    \resumeSubheading{Computational Chemistry \& Optimization - \scalebox{0.8}{\href{https://go.thekoppe.com/OptiSpec}{\underline{go.thekoppe.com/OptiSpec}}}}{November 2022 --- Present}
+      {The Brédas Research Group -- Dr. Veaceslav Coropceanu}{Tucson, AZ \& Remote}
+      \resumeItemListStart{}
+        \resumeItem{Developing a vibronic Hamiltonian modeling package in Python to simulate optical absorption spectra}
+        \resumeItem{Achieved a 99\% reduction in runtime (3 hours to $\sim$30 seconds) by extensively optimizing legacy FORTRAN code}
+        \resumeItem{Engineering high-performance code with JAX for autodifferentiation to unlock automated curve-fitting}
+        \resumeItem{Simulated electronic state results will be used to write two papers}
+      \resumeItemListEnd{}
+      
+    \resumeSubheading{ML Counterfactual Risk Estimation \& Minimization}{October 2023 --- Present}
+        {Dr.\ Kwang-Sung Jun}{Tucson, AZ \& Remote}
+        \resumeItemListStart{}
+          \resumeItem{Investigating and utilizing rigorous mathematical methods to improve machine learning recommendation models}
+          \resumeItem{Extending and enhancing research codebases to implement methods for off-policy estimation and optimization}
+          \resumeItem{Running 100 compute-hours/month of off-policy learning experiments}
+        \resumeItemListEnd{}
+
+    \resumeSubheading{Bioinformatics - \scalebox{0.8}{Report: \href{https://go.thekoppe.com/BioDoc}{\underline{go.thekoppe.com/BioDoc}}}}{September 2023 --- December 2023}
+      {Dr.\ Charles Higgins}{Tucson, AZ}
+      \resumeItemListStart{}
+        \resumeItem{Investigated alternatives to a popular R package for  gene relationships in large biological datasets}
+        \resumeItem{Wrote a formal 10-page report on my findings detailing progress, results, and recommendations (see URL)}
+    \resumeItemListEnd{}
+
+    \resumeSubHeadingListEnd{}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart{}
+
+      \resumeSubheading{BearTrak iOS Application - \scalebox{0.8}{\href{https://go.thekoppe.com/BearTrak}{\underline{go.thekoppe.com/BearTrak}}}}{October 2024 --- Present}
+      {Creator \& Sole Developer}{Ithaca, NY}
+        \resumeItemListStart{}
+        \resumeItem{Created a realtime iOS app for Cornell students to track campus dining, transit, and gym information}
+        \resumeItem{BearTrak uses a Go backend and OpenTripPlanner routing network, both hosted on an AWS server}
+        \resumeItem{Reached 500 downloads within a week of its December 2024 release}
+        \resumeItemListEnd{}
+
+      \resumeSubheading{Banner Hospital Volunteer Services Scheduling System}{September 2023 --- October 2023}
+      {Sole Developer}{Tucson, AZ}
+          \resumeItemListStart{}
+            \resumeItem{Spearheaded a full replacement of the office's manual system with a dynamic spreadsheet}
+            \resumeItem{Eliminated 20 hours of work/month with background script routines}
+          \resumeItemListEnd{}
+
+    \resumeSubHeadingListEnd{}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, Go, Java, Swift, Rust, Julia, R, FORTRAN, HTML/CSS, LaTeX} \\
+     \textbf{Frameworks}{: React, SwiftUI, Svelte/SvelteKit} \\
+     \textbf{Developer Tools}{: AWS, Nginx, Neovim, Git, Google Cloud Platform, Postman, DBeaver, Visual Studio Code, Xcode} \\
+     \textbf{Libraries}{: JAX, pandas, NumPy, SciPy, Matplotlib, PyTorch, Scikit-learn}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
